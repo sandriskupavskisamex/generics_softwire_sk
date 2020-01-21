@@ -8,6 +8,10 @@ public class Cart implements Countable {
     List<Box> cartContents = new ArrayList<>();
 
     //Returns total cart content count
+    public void add(Box box) {
+        cartContents.add(box);
+    }
+
     public int getCount() {
         int count = 0;
 

@@ -5,10 +5,13 @@ import java.util.List;
 
 public class Box<T> implements Countable {
 
-    List<T> myBox = new ArrayList<>();
+    List<T> boxContents = new ArrayList<>();
 
-    public int getCount() {
-        return myBox.size();
+    public void add(T item) {
+        boxContents.add(item);
     }
 
+    public int getCount() {
+        return boxContents.size();
+    }
 }
